@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
+<style>h
 :root{--navy:#020448;--cyan:#1ee1f6;--blue:#0b2150;--white:#ffffff;}
 *{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
@@ -295,7 +295,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
 
   const payload = { nombre, email, phone: telefono, first_name: nombre.split(' ')[0], perfil, urgencia, fecha: new Date().toLocaleString('es-ES') };
 
-  fetch('https://api.signalcore.ai/api/v1/strategies/str_mVMp5c5IjdQ/webhook/whk_LsFM9XaQvPQ', {
+  fetch('https://hook.eu2.make.com/xbp8moq0jneg2plb1l6gcpv6d8mkqq2c', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(payload) }).catch(() => null);/api/v1/strategies/str_mVMp5c5IjdQ/webhook/whk_LsFM9XaQvPQ', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({
