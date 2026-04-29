@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -295,7 +294,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
 
   const payload = { nombre, email, phone: telefono, first_name: nombre.split(' ')[0], perfil, urgencia, fecha: new Date().toLocaleString('es-ES') };
 
-  fetch('https://hook.eu2.make.com/xbp8moq0jneg2plb1l6gcpv6d8mkqq2c', {
+  fetch('https://api.signalcore.ai/api/v1/strategies/str_mVMp5c5IjdQ/webhook/whk_LsFM9XaQvPQ', {
     method: 'POST',
     mode: 'no-cors',
     headers: {'Content-Type': 'application/json'},
