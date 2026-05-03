@@ -294,12 +294,11 @@ document.getElementById('contact-form').addEventListener('submit', async functio
 
   const payload = { nombre, email, phone: telefono, first_name: nombre.split(' ')[0], perfil, urgencia, fecha: new Date().toLocaleString('es-ES') };
 
-  fetch('https://api.signalcore.ai/api/v1/strategies/str_mVMp5c5IjdQ/webhook/whk_LsFM9XaQvPQ', {
-    method: 'POST',
-    mode: 'no-cors',
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify(payload)
-  });
+fetch('TU_WEBHOOK_DE_MAKE_AQUI', {
+  method: 'POST',
+  headers: {'Content-Type': 'application/json'},
+  body: JSON.stringify(payload)
+});
 
   document.getElementById('contact-form').style.display = 'none';
   document.getElementById('form-success').style.display = 'block';
